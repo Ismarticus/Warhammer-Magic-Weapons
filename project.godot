@@ -1,0 +1,27 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="WFRPMagicWeapons"
+run/main_scene="res://magicItems.tscn"
+config/icon="res://images/cross_swords.png"
+
+[display]
+
+window/size/width=420
+
+[gui]
+
+theme/custom="res://gui/old_hammer.tres"
+
+[physics]
+
+common/enable_pause_aware_picking=true

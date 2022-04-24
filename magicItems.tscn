@@ -1,0 +1,118 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/weapons.gd" type="Script" id=1]
+[ext_resource path="res://scripts/ReportPager.gd" type="Script" id=2]
+[ext_resource path="res://gui/old_hammer.tres" type="Theme" id=4]
+
+[node name="magicItems" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = -1.0
+margin_right = 419.0
+margin_bottom = 600.0
+theme = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Report" type="ColorRect" parent="Panel"]
+margin_left = 63.0
+margin_top = 50.0
+margin_right = 363.0
+margin_bottom = 250.0
+color = Color( 0, 0, 0, 0.470588 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/Report"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 280.0
+margin_bottom = 180.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RuneWeaponButton" type="Button" parent="Panel"]
+margin_left = 63.0
+margin_top = 350.0
+margin_right = 363.0
+margin_bottom = 390.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/RuneWeaponButton"]
+margin_right = 300.0
+margin_bottom = 40.0
+text = "Rune Weapon"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AdditionalDamageButton" type="Button" parent="Panel"]
+margin_left = 63.0
+margin_top = 400.0
+margin_right = 363.0
+margin_bottom = 440.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/AdditionalDamageButton"]
+margin_right = 300.0
+margin_bottom = 40.0
+text = "Additional Damage"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BaneWeaponButton" type="Button" parent="Panel"]
+margin_left = 63.0
+margin_top = 450.0
+margin_right = 363.0
+margin_bottom = 490.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/BaneWeaponButton"]
+margin_right = 300.0
+margin_bottom = 40.0
+text = "Bane Weapon"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RandomWeapon" type="Button" parent="Panel"]
+margin_left = 63.0
+margin_top = 300.0
+margin_right = 363.0
+margin_bottom = 340.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/RandomWeapon"]
+margin_right = 300.0
+margin_bottom = 40.0
+text = "Random Item"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Panel/RuneWeaponButton" to="." method="_on_RuneWeaponButton_pressed"]
+[connection signal="pressed" from="Panel/AdditionalDamageButton" to="." method="_on_AdditionalDamageButton_pressed"]
+[connection signal="pressed" from="Panel/BaneWeaponButton" to="." method="_on_BaneWeaponButton_pressed"]
+[connection signal="pressed" from="Panel/RandomWeapon" to="." method="_on_RandomWeapon_pressed"]

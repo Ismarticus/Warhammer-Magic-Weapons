@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://boncf15jdkx4i"
+path="res://.godot/imported/CasablancaAntique.font-c056be8198a94718578b620681db58bb.fontdata"
+
+[deps]
+
+source_file="res://fonts/CasablancaAntique.font"
+dest_files=["res://.godot/imported/CasablancaAntique.font-c056be8198a94718578b620681db58bb.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2
